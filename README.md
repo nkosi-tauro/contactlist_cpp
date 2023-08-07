@@ -2,13 +2,13 @@
 <h1 align="center">Rubiks Contact List (C++ Version)</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/nkosi-tauro/contactlist?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/nkosi-tauro/contactlist_cpp?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/nkosi-tauro/contactlist?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/nkosi-tauro/contactlist_cpp?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/nkosi-tauro/contactlist?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/nkosi-tauro/contactlist_cpp?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/nkosi-tauro/contactlist?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/nkosi-tauro/contactlist_cpp?color=56BEB8">
 
 </p>
 
