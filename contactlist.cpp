@@ -12,10 +12,40 @@ map<string, string> addContact(string name, string number){
 };
 
 // delete contact
+string deleteContact(string name){
+    // first find the requested contact
+  if(contacts.find(name) != contacts.end()){
+    // edit name to have new number
+    contacts.erase(name);
+  }
+  else{
+    throw "Contact Not found";
+  }
+}
 
 // edit contact
+string editContact(string name, string newNumber) {
+  // first find the requested contact
+  if(contacts.find(name) != contacts.end()){
+    // edit name to have new number
+    contacts[name] = newNumber;
+  }
+  else{
+    throw "Contact Not found";
+  }
+}
 
 // search contact
+string searchContact(string name){
+  //search for a contact in the map using the name as the key
+  if(contacts.find(name) != contacts.end()){
+    cout << "Found Contact with Name: " << name << " and number: " << contacts[name] << endl;
+  }
+  else {
+    throw "contact not found";
+  }
+  return 0;
+};
 
 // list all contacts
 string listContacts(){
@@ -34,16 +64,22 @@ string listContacts(){
 
 int main(){
 
-  string name;
-  string number;
-  cout << "Enter name: "; 
-  cin >> name;
-  cout << "Enter number: ";
-  cin >> number;
+  // string name;
+  // string number;
+  // cout << "Enter name: "; 
+  // cin >> name;
+  // cout << "Enter number: ";
+  // cin >> number;
 
-  map<string, string> addKeyValue = addContact(name, number);
-  string list = listContacts();
-  cout << list << endl;
+  // map<string, string> addKeyValue = addContact(name, number);
+  // string list = listContacts();
+  // cout << list << endl;
+
+  try{
+    searchContact("John");
+  }catch(const char* error){
+    cout << error << endl;
+  }
 
 
 
